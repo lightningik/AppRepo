@@ -1,2 +1,2 @@
 # AppRepo
-SoonTM
+Made with JS and Electron.

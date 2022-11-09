@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path')
 const url = require('url')
 
@@ -8,7 +8,8 @@ function createWindow(){
     const mainWindow = new BrowserWindow({
         width:800,
         height:600,
-        show: false
+        show: false,
+        frame: false
     })
 
     mainWindow.loadFile('index.html')
@@ -48,3 +49,7 @@ app.on('window-all-closed', () => {
         app.quit();
     }
 })
+
+ipcMain.on('app_version', (event) => {
+    event.sender.send('app_version', { version: app.getVersion() });
+});

@@ -1,0 +1,22 @@
+{
+  "name": "apprepo",
+  "version": "1.0.0",
+  "description": "SoonTM",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightningYTlol/AppRepo.git"
+  },
+  "author": "Lighting_ggz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LightningYTlol/AppRepo/issues"
+  },
+  "homepage": "https://github.com/LightningYTlol/AppRepo#readme",
+  "dependencies": {
+    "electron": "^21.2.0"
+  }
+}
